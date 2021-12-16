@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>This page to add new customer</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+<div class="wrap-customer">
+	<h1>Add new customer</h1>
+	<form action="add" method="POST">
+		<table class="table">
+			<tr>
+				<th><label for="customerId">Customer Id</label></th>
+				<td><input type="text" id="customerId" name="customerId"/></td>
+			</tr>
+			<tr>
+				<th><label for="firstName">First Name</label></th>
+				<td><input type="text" id="firstName" name="firstName"/></td>
+			</tr>
+			<tr>
+				<th><label for="lastName">Last Name</label></th>
+				<td><input type="text" id="lastName" name="lastName"/></td>
+			</tr>
+			<tr>
+				<th><label for="addressLine1">Address Line 1</label></th>
+				<td><input type="text" id="addressLine1" name="addressLine1"/></td>
+			</tr>
+			<tr>
+				<th><label for="addressLine2">Address Line 2</label></th>
+				<td><input type="text" id="addressLine2" name="addressLine2"/></td>
+			</tr>
+			<tr>
+				<th><label for="city">City</label></th>
+				<td><input type="text" id="city" name="city"/></td>
+			</tr>
+			<tr><th><label for="state">State</label></th>
+			<th><select id="state" name="state">
+   				<option value="Alberta">Alberta</option>
+    			<option value="British Columbia">British Columbia</option>
+    			<option value="Manitoba">Manitoba</option>
+    			<option value="Nova Scotia">Nova Scotia</option>
+    			<option value="New Brunswick">New Brunswick</option>
+    			<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+    			<option value="Nunavut">Nunavut</option>
+    			<option value="Northwest Territories">Northwwest Territories</option>
+    			<option value="Ontario">Ontario</option>
+    			<option value="Prince Edward Island">Prince Edward Island</option>
+    			<option value="Quebec">Quebec</option>
+    			<option value="Yukon Territory">Yukon Territory</option>
+  				</select></th>
+  			</tr>
+			<tr>
+			<th><label for="postalCode">Postal Code:</label></th>
+			<th><input type="text" id="postalCode" name="postalCode"/></th>
+			</tr>
+			<tr>
+				<th><label for="phone">Phone Number</label></th>
+				<td><input type="text" id="phone" name="phone"/></td>
+			</tr>
+			<tr>
+				<th><label for="emai">Email</label></th>
+				<td><input type="text" id="email" name="email"/></td>
+			</tr>
+			<tr>
+				<th><label for="creidtLimit">Credit Limit</label></th>
+				<td><input type="text" id="creditLimit" name="creditLimit"/></td>
+			</tr>
+		</table>
+		<div class="btn-area">
+			<span><input type="submit" name="addCustomer" class="btn btn-primary"/></span><br>
+			<span><a href="show">View Customer List</a></span>
+		</div>
+	</form>
+</div>
+</body>
+</html>
